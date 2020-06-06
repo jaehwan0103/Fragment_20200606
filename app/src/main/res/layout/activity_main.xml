@@ -7,18 +7,35 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <fragment
-        android:tag="첫프래그먼트"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        class="kr.ptus.fragment_20200606.fragment.FirstFragment"/>
+        android:layout_height="match_parent">
 
-    <fragment
-        android:tag="첫프래그먼트 재황용"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        class="kr.ptus.fragment_20200606.fragment.FirstFragment"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
+            <fragment
+                class="kr.ptus.fragment_20200606.fragment.FirstFragment"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:tag="첫프래그먼트" />
 
+            <fragment
+                class="kr.ptus.fragment_20200606.fragment.SecondFragment"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:tag="두번째 프래그먼트" />
+
+            <fragment
+                class="kr.ptus.fragment_20200606.fragment.FirstFragment"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:tag="첫프래그먼트 재황용" />
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>
