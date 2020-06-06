@@ -13,6 +13,12 @@
         android:layout_height="200dp"
         class="kr.ptus.fragment_20200606.fragment.FirstFragment"/>
 
+    <fragment
+        android:tag="첫프래그먼트 재황용"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        class="kr.ptus.fragment_20200606.fragment.FirstFragment"/>
+
 
 
 </LinearLayout>
